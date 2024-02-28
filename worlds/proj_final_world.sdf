@@ -63,6 +63,14 @@
             <include>
             <uri>model://../models/alvo.sdf</uri>
             </include>
+            <plugin
+                filename="gz-sim-odometry-publisher-system"
+                name="gz::sim::systems::OdometryPublisher">
+                <odom_frame>world/odom</odom_frame>
+                <robot_base_frame>alvo1</robot_base_frame>
+                <odom_publish_frequency>2</odom_publish_frequency>
+                <odom_topic>/alvo1/odometry</odom_topic>
+            </plugin>
         </model>
         <model name="alvo2">
             <self_collide>true</self_collide>
@@ -70,6 +78,14 @@
             <include>
             <uri>model://../models/alvo.sdf</uri>
             </include>
+            <plugin
+                filename="gz-sim-odometry-publisher-system"
+                name="gz::sim::systems::OdometryPublisher">
+                <odom_frame>world/odom</odom_frame>
+                <robot_base_frame>alvo2</robot_base_frame>
+                <odom_publish_frequency>2</odom_publish_frequency>
+                <odom_topic>/alvo2/odometry</odom_topic>
+            </plugin>
         </model>
         <model name="alvo3">
             <self_collide>true</self_collide>
@@ -77,6 +93,14 @@
             <include>
             <uri>model://../models/alvo.sdf</uri>
             </include>
+            <plugin
+                filename="gz-sim-odometry-publisher-system"
+                name="gz::sim::systems::OdometryPublisher">
+                <odom_frame>world/odom</odom_frame>
+                <robot_base_frame>alvo3</robot_base_frame>
+                <odom_publish_frequency>2</odom_publish_frequency>
+                <odom_topic>/alvo3/odometry</odom_topic>
+            </plugin>
         </model>
         <model name="alvo4">
             <self_collide>true</self_collide>
@@ -84,6 +108,14 @@
             <include>
             <uri>model://../models/alvo.sdf</uri>
             </include>
+            <plugin
+                filename="gz-sim-odometry-publisher-system"
+                name="gz::sim::systems::OdometryPublisher">
+                <odom_frame>world/odom</odom_frame>
+                <robot_base_frame>alvo4</robot_base_frame>
+                <odom_publish_frequency>2</odom_publish_frequency>
+                <odom_topic>/alvo4/odometry</odom_topic>
+            </plugin>
         </model>
         <model name="alvo5">
             <self_collide>true</self_collide>
@@ -91,6 +123,14 @@
             <include>
             <uri>model://../models/alvo.sdf</uri>
             </include>
+            <plugin
+                filename="gz-sim-odometry-publisher-system"
+                name="gz::sim::systems::OdometryPublisher">
+                <odom_frame>world/odom</odom_frame>
+                <robot_base_frame>alvo5</robot_base_frame>
+                <odom_publish_frequency>2</odom_publish_frequency>
+                <odom_topic>/alvo5/odometry</odom_topic>
+            </plugin>
         </model>
         <model name="carrinho">
             <self_collide>true</self_collide>

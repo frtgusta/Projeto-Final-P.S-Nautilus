@@ -9,13 +9,38 @@
   ros_type_name: "nav_msgs/msg/Odometry"
   gz_type_name: "gz.msgs.Odometry"
   direction: GZ_TO_ROS
+- ros_topic_name: "/alvo1/odometry"
+  gz_topic_name: "/alvo1/odometry"
+  ros_type_name: "nav_msgs/msg/Odometry"
+  gz_type_name: "gz.msgs.Odometry"
+  direction: GZ_TO_ROS
+- ros_topic_name: "/alvo2/odometry"
+  gz_topic_name: "/alvo2/odometry"
+  ros_type_name: "nav_msgs/msg/Odometry"
+  gz_type_name: "gz.msgs.Odometry"
+  direction: GZ_TO_ROS
+- ros_topic_name: "/alvo3/odometry"
+  gz_topic_name: "/alvo3/odometry"
+  ros_type_name: "nav_msgs/msg/Odometry"
+  gz_type_name: "gz.msgs.Odometry"
+  direction: GZ_TO_ROS
+- ros_topic_name: "/alvo4/odometry"
+  gz_topic_name: "/alvo4/odometry"
+  ros_type_name: "nav_msgs/msg/Odometry"
+  gz_type_name: "gz.msgs.Odometry"
+  direction: GZ_TO_ROS
+- ros_topic_name: "/alvo5/odometry"
+  gz_topic_name: "/alvo5/odometry"
+  ros_type_name: "nav_msgs/msg/Odometry"
+  gz_type_name: "gz.msgs.Odometry"
+  direction: GZ_TO_ROS
 - ros_topic_name: "/tf_carrinho"
   gz_topic_name: "/model/carrinho/pose"
   ros_type_name: "tf2_msgs/msg/TFMessage"
   gz_type_name: "gz.msgs.Pose_V"
   direction: GZ_TO_ROS
 - ros_topic_name: "/tf_static"
-  gz_topic_name: "/model/diff_drive/pose_static"
+  gz_topic_name: "/model/carrinho/pose_static"
   ros_type_name: "tf2_msgs/msg/TFMessage"
   gz_type_name: "gz.msgs.Pose_V"
   direction: GZ_TO_ROS
