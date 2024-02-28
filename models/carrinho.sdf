@@ -6,12 +6,12 @@
             <inertial> <!--inertial properties of the link mass, inertia matrix-->
                 <mass>1.14395</mass>
                 <inertia>
-                    <ixx>0.095329</ixx>
+                    <ixx>0.103909</ixx>
                     <ixy>0</ixy>
                     <ixz>0</ixz>
-                    <iyy>0.381317</iyy>
+                    <iyy>0.145854</iyy>
                     <iyz>0</iyz>
-                    <izz>0.476646</izz>
+                    <izz>0.232603</izz>
                 </inertia>
             </inertial>
             <visual name='visual'>
@@ -40,12 +40,12 @@
             <inertial>
                 <mass>1</mass>
                 <inertia>
-                    <ixx>0.043333</ixx>
+                    <ixx>0.013333</ixx>
                     <ixy>0</ixy>
                     <ixz>0</ixz>
-                    <iyy>0.043333</iyy>
+                    <iyy>0.013333</iyy>
                     <iyz>0</iyz>
-                    <izz>0.08</izz>
+                    <izz>0.02</izz>
                 </inertia>
             </inertial>
             <visual name='visual'>
@@ -75,12 +75,12 @@
             <inertial>
                 <mass>1</mass>
                 <inertia>
-                    <ixx>0.043333</ixx>
+                    <ixx>0.013333</ixx>
                     <ixy>0</ixy>
                     <ixz>0</ixz>
-                    <iyy>0.043333</iyy>
+                    <iyy>0.013333</iyy>
                     <iyz>0</iyz>
-                    <izz>0.08</izz>
+                    <izz>0.02</izz>
                 </inertia>
             </inertial>
             <visual name='visual'>
@@ -110,12 +110,12 @@
             <inertial>
                 <mass>1</mass>
                 <inertia>
-                    <ixx>0.043333</ixx>
+                    <ixx>0.013333</ixx>
                     <ixy>0</ixy>
                     <ixz>0</ixz>
-                    <iyy>0.043333</iyy>
+                    <iyy>0.013333</iyy>
                     <iyz>0</iyz>
-                    <izz>0.08</izz>
+                    <izz>0.02</izz>
                 </inertia>
             </inertial>
             <visual name='visual'>
@@ -145,12 +145,12 @@
             <inertial>
                 <mass>1</mass>
                 <inertia>
-                    <ixx>0.043333</ixx>
+                    <ixx>0.013333</ixx>
                     <ixy>0</ixy>
                     <ixz>0</ixz>
-                    <iyy>0.043333</iyy>
+                    <iyy>0.013333</iyy>
                     <iyz>0</iyz>
-                    <izz>0.08</izz>
+                    <izz>0.02</izz>
                 </inertia>
             </inertial>
             <visual name='visual'>
