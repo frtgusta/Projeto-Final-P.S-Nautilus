@@ -200,7 +200,7 @@
             </axis>
         </joint>
         <joint name='back_left_wheel_joint' type='revolute'>
-            <pose relative_to='left_wheel'/>
+            <pose relative_to='back_left_wheel'/>
             <parent>chassis</parent>
             <child>back_left_wheel</child>
             <axis>
@@ -212,7 +212,7 @@
             </axis>
         </joint>
         <joint name='back_right_wheel_joint' type='revolute'>
-            <pose relative_to='right_wheel'/>
+            <pose relative_to='back_right_wheel'/>
             <parent>chassis</parent>
             <child>back_right_wheel</child>
             <axis>
