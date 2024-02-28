@@ -326,8 +326,8 @@
                 <right_joint>back_right_wheel_joint</right_joint>
                 <wheel_separation>1.2</wheel_separation>
                 <wheel_radius>0.2</wheel_radius>
-                <odom_publish_frequency>1</odom_publish_frequency>
-                <topic>cmd_vel</topic>
+                <odom_publish_frequency>2</odom_publish_frequency>
+                <topic>/cmd_vel</topic>
             </plugin>
             <plugin
                 filename="gz-sim-pose-publisher-system"
@@ -340,8 +340,10 @@
             <plugin
                 filename="gz-sim-odometry-publisher-system"
                 name="gz::sim::systems::OdometryPublisher">
-                <odom_frame>diff_drive/odom</odom_frame>
-                <robot_base_frame>diff_drive</robot_base_frame>
+                <odom_frame>world/odom</odom_frame>
+                <robot_base_frame>carrinho</robot_base_frame>
+                <odom_publish_frequency>2</odom_publish_frequency>
+                <odom_topic>/carrinho/odometry</odom_topic>
             </plugin>
         </model>
     </world>
