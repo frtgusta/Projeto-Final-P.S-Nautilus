@@ -357,6 +357,17 @@
                     </limit>
                 </axis>
             </joint>
+
+            <plugin
+                filename="gz-sim-velocity-control-system"
+                name="gz::sim::systems::VelocityControl">   <!--velocity control and diff drive are both options for controling the robot-->
+                <topic>/cmd_vel</topic>
+                <initial_linear>0 0 0</initial_linear>
+                <initial_angular>0 0 0</initial_angular>
+            </plugin>
+
+
+            <!--
             <plugin
                 filename="gz-sim-diff-drive-system"
                 name="gz::sim::systems::DiffDrive">
@@ -369,6 +380,7 @@
                 <odom_publish_frequency>2</odom_publish_frequency>
                 <topic>/cmd_vel</topic>
             </plugin>
+            -->
             <plugin
                 filename="gz-sim-pose-publisher-system"
                 name="gz::sim::systems::PosePublisher">
