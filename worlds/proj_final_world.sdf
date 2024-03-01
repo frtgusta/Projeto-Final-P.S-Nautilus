@@ -61,7 +61,7 @@
             <self_collide>true</self_collide>
             <pose>5 7 0.5 0 0 0</pose>
             <include>
-            <uri>model://../models/alvo.sdf</uri>
+            <uri>model://root/proj_final/src/harpia_proj_final/models/alvo.sdf</uri>
             </include>
             <plugin
                 filename="gz-sim-odometry-publisher-system"
@@ -76,7 +76,7 @@
             <self_collide>true</self_collide>
             <pose>6 -6 0.5 0 0 0</pose>
             <include>
-            <uri>model://../models/alvo.sdf</uri>
+            <uri>model://root/proj_final/src/harpia_proj_final/models/alvo.sdf</uri>
             </include>
             <plugin
                 filename="gz-sim-odometry-publisher-system"
@@ -91,7 +91,7 @@
             <self_collide>true</self_collide>
             <pose>9 0 0.5 0 0 0</pose>
             <include>
-            <uri>model://../models/alvo.sdf</uri>
+            <uri>model://root/proj_final/src/harpia_proj_final/models/alvo.sdf</uri>
             </include>
             <plugin
                 filename="gz-sim-odometry-publisher-system"
@@ -106,7 +106,7 @@
             <self_collide>true</self_collide>
             <pose>-6 3 0.5 0 0 0</pose>
             <include>
-            <uri>model://../models/alvo.sdf</uri>
+            <uri>model://root/proj_final/src/harpia_proj_final/models/alvo.sdf</uri>
             </include>
             <plugin
                 filename="gz-sim-odometry-publisher-system"
@@ -121,7 +121,7 @@
             <self_collide>true</self_collide>
             <pose>-2 -6 0.5 0 0 0</pose>
             <include>
-            <uri>model://../models/alvo.sdf</uri>
+            <uri>model://root/proj_final/src/harpia_proj_final/models/alvo.sdf</uri>
             </include>
             <plugin
                 filename="gz-sim-odometry-publisher-system"
@@ -137,7 +137,7 @@
             <pose>0 0 0 0 0 0</pose>
             <link name='chassis'>
                 <pose>0 0 0.2 0 0 0</pose>
-                <inertial> <!--inertial properties of the link mass, inertia matrix-->
+                <inertial> 
                     <mass>1.14395</mass>
                     <inertia>
                         <ixx>0.103909</ixx>
@@ -154,7 +154,7 @@
                             <size>1.2 1.0 0.3</size>
                         </box>
                     </geometry>
-                    <!--let's add color to our link-->
+                    
                     <material>
                         <ambient>0.7 0.7 0.9 1</ambient>
                         <diffuse>0.7 0.7 0.9 1</diffuse>
@@ -205,7 +205,7 @@
                 </collision>
             </link>
             <link name='right_wheel'>
-                <pose relative_to="chassis">-0.4 -0.6 0 -1.5707 0 0</pose> <!--angles are in radian-->
+                <pose relative_to="chassis">-0.4 -0.6 0 -1.5707 0 0</pose> 
                 <inertial>
                     <mass>1</mass>
                     <inertia>
@@ -239,6 +239,7 @@
                     </geometry>
                 </collision>
             </link>
+
             <link name='back_left_wheel'>
                 <pose relative_to="chassis">0.4 0.6 0 -1.5707 0 0</pose>
                 <inertial>
@@ -274,6 +275,7 @@
                     </geometry>
                 </collision>
             </link>
+
             <link name='back_right_wheel'>
                 <pose relative_to="chassis">0.4 -0.6 0 -1.5707 0 0</pose> <!--angles are in radian-->
                 <inertial>
@@ -309,8 +311,8 @@
                     </geometry>
                 </collision>
             </link>
+
             <joint name='left_wheel_joint' type='revolute'>
-                <pose relative_to='left_wheel'/>
                 <parent>chassis</parent>
                 <child>left_wheel</child>
                 <axis>
@@ -321,8 +323,8 @@
                     </limit>
                 </axis>
             </joint>
+
             <joint name='right_wheel_joint' type='revolute'>
-                <pose relative_to='right_wheel'/>
                 <parent>chassis</parent>
                 <child>right_wheel</child>
                 <axis>
@@ -333,6 +335,7 @@
                     </limit>
                 </axis>
             </joint>
+
             <joint name='back_left_wheel_joint' type='revolute'>
                 <pose relative_to='back_left_wheel'/>
                 <parent>chassis</parent>
@@ -345,6 +348,7 @@
                     </limit>
                 </axis>
             </joint>
+            
             <joint name='back_right_wheel_joint' type='revolute'>
                 <pose relative_to='back_right_wheel'/>
                 <parent>chassis</parent>
@@ -358,29 +362,39 @@
                 </axis>
             </joint>
 
+
+            <!-- <plugin
+                filename="ignition-gazebo-diff-drive-system"
+                name="ignition::gazebo::systems::DiffDrive">
+                <left_joint>left_wheel_joint</left_joint>
+                <right_joint>right_wheel_joint</right_joint>
+                <wheel_separation>1.25</wheel_separation>
+                <wheel_radius>0.3</wheel_radius>
+                <odom_publish_frequency>1</odom_publish_frequency>
+                <max_linear_acceleration>30</max_linear_acceleration>
+                <min_linear_acceleration>-1</min_linear_acceleration>
+                <max_angular_acceleration>30</max_angular_acceleration>
+                <min_angular_acceleration>-2</min_angular_acceleration>
+                <max_linear_velocity>30.5</max_linear_velocity>
+                <min_linear_velocity>-0.5</min_linear_velocity>
+                <max_angular_velocity>30</max_angular_velocity>
+                <min_angular_velocity>-1</min_angular_velocity>
+            </plugin> -->
+
             <plugin
+        filename="gz-sim-velocity-control-system"
+        name="gz::sim::systems::VelocityControl">
+      </plugin>
+             <!-- <plugin
                 filename="gz-sim-velocity-control-system"
-                name="gz::sim::systems::VelocityControl">   <!--velocity control and diff drive are both options for controling the robot-->
+                name="gz::sim::systems::VelocityControl">   
                 <topic>/cmd_vel</topic>
                 <initial_linear>0 0 0</initial_linear>
                 <initial_angular>0 0 0</initial_angular>
-            </plugin>
+            </plugin>  -->
 
 
-            <!--
-            <plugin
-                filename="gz-sim-diff-drive-system"
-                name="gz::sim::systems::DiffDrive">
-                <left_joint>left_wheel_joint</left_joint>
-                <right_joint>right_wheel_joint</right_joint>
-                <left_joint>back_left_wheel_joint</left_joint>
-                <right_joint>back_right_wheel_joint</right_joint>
-                <wheel_separation>1.2</wheel_separation>
-                <wheel_radius>0.2</wheel_radius>
-                <odom_publish_frequency>2</odom_publish_frequency>
-                <topic>/cmd_vel</topic>
-            </plugin>
-            -->
+            
             <plugin
                 filename="gz-sim-pose-publisher-system"
                 name="gz::sim::systems::PosePublisher">
@@ -398,5 +412,6 @@
                 <odom_topic>/carrinho/odometry</odom_topic>
             </plugin>
         </model>
+        
     </world>
 </sdf>

@@ -74,13 +74,19 @@ def generate_launch_description():
     )
 
     # Bridge ROS topics and Gazebo messages for establishing communication
+    gz_topic = ''
+    
     bridge = Node(
         package='ros_gz_bridge',
         executable='parameter_bridge',
         parameters=[{
             'config_file': os.path.join(pkg_project_bringup, 'params', 'bridges.yaml'),
             'qos_overrides./tf_static.publisher.durability': 'transient_local',
+            
         }],
+        # arguments=[
+        #    '/model/carrinho/cmd_vel@geometry_msgs/msg/Twist@gz.msgs.Twist',
+        # ],
         output='screen'
     )
 
