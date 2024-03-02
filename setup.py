@@ -26,7 +26,6 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            "mover = harpia_proj_final.move:main",
         ],
     },
 )
