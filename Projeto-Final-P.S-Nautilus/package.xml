@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>meu_robot_sim</name>
+  <version>0.0.1</version>
+  <description>Um pacote para simulação de robôs no Gazebo</description>
+  <maintainer email="gustafreitas215@gmail.com">Gustavo</maintainer>
+  <license>MIT</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <build_depend>rospy</build_depend>
+  <build_depend>std_msgs</build_depend>
+  <build_depend>gazebo_ros</build_depend>
+
+  <run_depend>rospy</run_depend>
+  <run_depend>std_msgs</run_depend>
+  <run_depend>gazebo_ros</run_depend>
+</package>

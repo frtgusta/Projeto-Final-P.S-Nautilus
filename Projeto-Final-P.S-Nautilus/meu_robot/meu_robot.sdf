@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<sdf version="1.6">
+  <model name="meu_robot">
+    <link name="base_link">
+      <pose frame="">{x} {y} {z} 0 0 0</pose>
+      <collision name="base_collision">
+        <geometry>
+          <cylinder>
+            <radius>0.1</radius>
+            <length>0.2</length>
+          </cylinder>
+        </geometry>
+      </collision>
+      <visual name="base_visual">
+        <geometry>
+          <cylinder>
+            <radius>0.1</radius>
+            <length>0.2</length>
+          </cylinder>
+        </geometry>
+      </visual>
+    </link>
+  </model>
+</sdf>

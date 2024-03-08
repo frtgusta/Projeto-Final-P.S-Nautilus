@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<robot name="meu_robot">
+
+  <link name="base_link">
+    <visual>
+      <geometry>
+        <cylinder length="0.2" radius="0.1"/>
+      </geometry>
+    </visual>
+  </link>
+
+  <joint name="base_joint" type="fixed">
+    <parent link="world"/>
+    <child link="base_link"/>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+  </joint>
+
+</robot>
