@@ -36,9 +36,9 @@ def generate_launch_description():
     pkg_ros_gz_sim = get_package_share_directory('ros_gz_sim')
     
     # Load the SDF file from "description" package
-    sdf_file  =  os.path.join(pkg_project_description, 'models', 'carrinho.sdf')
-    with open(sdf_file, 'r') as infp:
-        robot_desc = infp.read()
+    # sdf_file  =  os.path.join(pkg_project_description, 'models', 'carrinho.sdf')
+    # with open(sdf_file, 'r') as infp:
+    #     robot_desc = infp.read()
     
     # For publishing and controlling the robot pose, we need joint states of the robot
     # Configure the robot model by adjusting the joint angles using the GUI slider
@@ -62,16 +62,16 @@ def generate_launch_description():
     )
 
     # Takes the description and joint angles as inputs and publishes the 3D poses of the robot links
-    robot_state_publisher = Node(
-        package='robot_state_publisher',
-        executable='robot_state_publisher',
-        name='robot_state_publisher',
-        output='both',
-        parameters=[
-            {'use_sim_time': True},
-            {'robot_description': robot_desc},
-        ]
-    )
+    # robot_state_publisher = Node(
+    #     package='robot_state_publisher',
+    #     executable='robot_state_publisher',
+    #     name='robot_state_publisher',
+    #     output='both',
+    #     parameters=[
+    #         {'use_sim_time': True},
+    #         {'robot_description': robot_desc},
+    #     ]
+    # )
 
     # Bridge ROS topics and Gazebo messages for establishing communication
     gz_topic = ''
@@ -94,5 +94,5 @@ def generate_launch_description():
         gz_sim,
         bridge,
 #        joint_state_publisher_gui,
-        robot_state_publisher
+        # robot_state_publisher
     ])
