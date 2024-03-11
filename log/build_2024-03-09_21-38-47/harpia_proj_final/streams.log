@@ -1,0 +1,42 @@
+[0.959s] Invoking command in '/root/catkin_ws/src/harpia_proj_final': PYTHONPATH=/root/catkin_ws/build/harpia_proj_final/prefix_override:/root/catkin_ws/install/harpia_proj_final/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/harpia_proj_final build --build-base /root/catkin_ws/build/harpia_proj_final/build install --record /root/catkin_ws/build/harpia_proj_final/install.log --single-version-externally-managed
+[1.153s] running egg_info
+[1.153s] creating ../../build/harpia_proj_final/harpia_proj_final.egg-info
+[1.153s] writing ../../build/harpia_proj_final/harpia_proj_final.egg-info/PKG-INFO
+[1.154s] writing dependency_links to ../../build/harpia_proj_final/harpia_proj_final.egg-info/dependency_links.txt
+[1.154s] writing entry points to ../../build/harpia_proj_final/harpia_proj_final.egg-info/entry_points.txt
+[1.154s] writing requirements to ../../build/harpia_proj_final/harpia_proj_final.egg-info/requires.txt
+[1.154s] writing top-level names to ../../build/harpia_proj_final/harpia_proj_final.egg-info/top_level.txt
+[1.155s] writing manifest file '../../build/harpia_proj_final/harpia_proj_final.egg-info/SOURCES.txt'
+[1.157s] reading manifest file '../../build/harpia_proj_final/harpia_proj_final.egg-info/SOURCES.txt'
+[1.157s] adding license file 'LICENSE'
+[1.158s] writing manifest file '../../build/harpia_proj_final/harpia_proj_final.egg-info/SOURCES.txt'
+[1.158s] running build
+[1.158s] running build_py
+[1.159s] creating /root/catkin_ws/build/harpia_proj_final/build
+[1.159s] creating /root/catkin_ws/build/harpia_proj_final/build/lib
+[1.159s] creating /root/catkin_ws/build/harpia_proj_final/build/lib/harpia_proj_final
+[1.159s] copying harpia_proj_final/__init__.py -> /root/catkin_ws/build/harpia_proj_final/build/lib/harpia_proj_final
+[1.159s] running install
+[1.160s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[1.160s]   warnings.warn(
+[1.160s] running install_lib
+[1.161s] creating /root/catkin_ws/install/harpia_proj_final/lib/python3.10/site-packages/harpia_proj_final
+[1.161s] copying /root/catkin_ws/build/harpia_proj_final/build/lib/harpia_proj_final/__init__.py -> /root/catkin_ws/install/harpia_proj_final/lib/python3.10/site-packages/harpia_proj_final
+[1.162s] byte-compiling /root/catkin_ws/install/harpia_proj_final/lib/python3.10/site-packages/harpia_proj_final/__init__.py to __init__.cpython-310.pyc
+[1.162s] running install_data
+[1.162s] creating /root/catkin_ws/install/harpia_proj_final/share/ament_index
+[1.163s] creating /root/catkin_ws/install/harpia_proj_final/share/ament_index/resource_index
+[1.163s] creating /root/catkin_ws/install/harpia_proj_final/share/ament_index/resource_index/packages
+[1.163s] copying resource/harpia_proj_final -> /root/catkin_ws/install/harpia_proj_final/share/ament_index/resource_index/packages
+[1.163s] copying package.xml -> /root/catkin_ws/install/harpia_proj_final/share/harpia_proj_final
+[1.163s] creating /root/catkin_ws/install/harpia_proj_final/share/harpia_proj_final/launch
+[1.164s] copying launch/proj_final.launch.py -> /root/catkin_ws/install/harpia_proj_final/share/harpia_proj_final/launch
+[1.164s] creating /root/catkin_ws/install/harpia_proj_final/share/harpia_proj_final/params
+[1.164s] copying params/bridges.yaml -> /root/catkin_ws/install/harpia_proj_final/share/harpia_proj_final/params
+[1.164s] creating /root/catkin_ws/install/harpia_proj_final/share/harpia_proj_final/worlds
+[1.164s] copying worlds/proj_final_world.sdf -> /root/catkin_ws/install/harpia_proj_final/share/harpia_proj_final/worlds
+[1.164s] running install_egg_info
+[1.166s] Copying ../../build/harpia_proj_final/harpia_proj_final.egg-info to /root/catkin_ws/install/harpia_proj_final/lib/python3.10/site-packages/harpia_proj_final-0.0.0-py3.10.egg-info
+[1.169s] running install_scripts
+[1.192s] writing list of installed files to '/root/catkin_ws/build/harpia_proj_final/install.log'
+[1.219s] Invoked command in '/root/catkin_ws/src/harpia_proj_final' returned '0': PYTHONPATH=/root/catkin_ws/build/harpia_proj_final/prefix_override:/root/catkin_ws/install/harpia_proj_final/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/harpia_proj_final build --build-base /root/catkin_ws/build/harpia_proj_final/build install --record /root/catkin_ws/build/harpia_proj_final/install.log --single-version-externally-managed

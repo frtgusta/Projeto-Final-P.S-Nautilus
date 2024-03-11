@@ -1,0 +1,59 @@
+[0.000000] (-) TimerEvent: {}
+[0.000329] (harpia_proj_final) JobQueued: {'identifier': 'harpia_proj_final', 'dependencies': OrderedDict()}
+[0.001145] (harpia_proj_final) JobStarted: {'identifier': 'harpia_proj_final'}
+[0.099186] (-) TimerEvent: {}
+[0.199683] (-) TimerEvent: {}
+[0.300691] (-) TimerEvent: {}
+[0.401107] (-) TimerEvent: {}
+[0.501600] (-) TimerEvent: {}
+[0.602062] (-) TimerEvent: {}
+[0.702588] (-) TimerEvent: {}
+[0.803099] (-) TimerEvent: {}
+[0.903557] (-) TimerEvent: {}
+[0.957110] (harpia_proj_final) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../build/harpia_proj_final', 'build', '--build-base', '/root/catkin_ws/build/harpia_proj_final/build', 'install', '--record', '/root/catkin_ws/build/harpia_proj_final/install.log', '--single-version-externally-managed'], 'cwd': '/root/catkin_ws/src/harpia_proj_final', 'env': {'HOSTNAME': 'docker-desktop', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/root', 'OLDPWD': '/root/catkin_ws/src', 'ROS_PYTHON_VERSION': '3', 'ROS_DISTRO': 'humble', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/root/Micro-XRCE-DDS-Gen/scripts:/root/catkin_ws/src/ardupilot/Tools/autotest:/root/catkin_ws/src/ardupilot/Tools/autotest', 'DISPLAY': ':0', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'AMENT_PREFIX_PATH': '/opt/ros/humble', 'GZ_VERSION': 'garden', 'PWD': '/root/catkin_ws/build/harpia_proj_final', 'LC_ALL': 'C.UTF-8', 'PYTHONPATH': '/root/catkin_ws/build/harpia_proj_final/prefix_override:/root/catkin_ws/install/harpia_proj_final/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1'}, 'shell': False}
+[1.003689] (-) TimerEvent: {}
+[1.104151] (-) TimerEvent: {}
+[1.153632] (harpia_proj_final) StdoutLine: {'line': b'running egg_info\n'}
+[1.154099] (harpia_proj_final) StdoutLine: {'line': b'creating ../../build/harpia_proj_final/harpia_proj_final.egg-info\n'}
+[1.154436] (harpia_proj_final) StdoutLine: {'line': b'writing ../../build/harpia_proj_final/harpia_proj_final.egg-info/PKG-INFO\n'}
+[1.154829] (harpia_proj_final) StdoutLine: {'line': b'writing dependency_links to ../../build/harpia_proj_final/harpia_proj_final.egg-info/dependency_links.txt\n'}
+[1.155132] (harpia_proj_final) StdoutLine: {'line': b'writing entry points to ../../build/harpia_proj_final/harpia_proj_final.egg-info/entry_points.txt\n'}
+[1.155489] (harpia_proj_final) StdoutLine: {'line': b'writing requirements to ../../build/harpia_proj_final/harpia_proj_final.egg-info/requires.txt\n'}
+[1.155597] (harpia_proj_final) StdoutLine: {'line': b'writing top-level names to ../../build/harpia_proj_final/harpia_proj_final.egg-info/top_level.txt\n'}
+[1.155981] (harpia_proj_final) StdoutLine: {'line': b"writing manifest file '../../build/harpia_proj_final/harpia_proj_final.egg-info/SOURCES.txt'\n"}
+[1.157779] (harpia_proj_final) StdoutLine: {'line': b"reading manifest file '../../build/harpia_proj_final/harpia_proj_final.egg-info/SOURCES.txt'\n"}
+[1.157932] (harpia_proj_final) StdoutLine: {'line': b"adding license file 'LICENSE'\n"}
+[1.158645] (harpia_proj_final) StdoutLine: {'line': b"writing manifest file '../../build/harpia_proj_final/harpia_proj_final.egg-info/SOURCES.txt'\n"}
+[1.159329] (harpia_proj_final) StdoutLine: {'line': b'running build\n'}
+[1.159522] (harpia_proj_final) StdoutLine: {'line': b'running build_py\n'}
+[1.159678] (harpia_proj_final) StdoutLine: {'line': b'creating /root/catkin_ws/build/harpia_proj_final/build\n'}
+[1.159748] (harpia_proj_final) StdoutLine: {'line': b'creating /root/catkin_ws/build/harpia_proj_final/build/lib\n'}
+[1.160039] (harpia_proj_final) StdoutLine: {'line': b'creating /root/catkin_ws/build/harpia_proj_final/build/lib/harpia_proj_final\n'}
+[1.160167] (harpia_proj_final) StdoutLine: {'line': b'copying harpia_proj_final/__init__.py -> /root/catkin_ws/build/harpia_proj_final/build/lib/harpia_proj_final\n'}
+[1.160332] (harpia_proj_final) StdoutLine: {'line': b'running install\n'}
+[1.160977] (harpia_proj_final) StderrLine: {'line': b'/usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.\n'}
+[1.161108] (harpia_proj_final) StderrLine: {'line': b'  warnings.warn(\n'}
+[1.161215] (harpia_proj_final) StdoutLine: {'line': b'running install_lib\n'}
+[1.161839] (harpia_proj_final) StdoutLine: {'line': b'creating /root/catkin_ws/install/harpia_proj_final/lib/python3.10/site-packages/harpia_proj_final\n'}
+[1.162034] (harpia_proj_final) StdoutLine: {'line': b'copying /root/catkin_ws/build/harpia_proj_final/build/lib/harpia_proj_final/__init__.py -> /root/catkin_ws/install/harpia_proj_final/lib/python3.10/site-packages/harpia_proj_final\n'}
+[1.162713] (harpia_proj_final) StdoutLine: {'line': b'byte-compiling /root/catkin_ws/install/harpia_proj_final/lib/python3.10/site-packages/harpia_proj_final/__init__.py to __init__.cpython-310.pyc\n'}
+[1.162937] (harpia_proj_final) StdoutLine: {'line': b'running install_data\n'}
+[1.163315] (harpia_proj_final) StdoutLine: {'line': b'creating /root/catkin_ws/install/harpia_proj_final/share/ament_index\n'}
+[1.163762] (harpia_proj_final) StdoutLine: {'line': b'creating /root/catkin_ws/install/harpia_proj_final/share/ament_index/resource_index\n'}
+[1.163930] (harpia_proj_final) StdoutLine: {'line': b'creating /root/catkin_ws/install/harpia_proj_final/share/ament_index/resource_index/packages\n'}
+[1.164114] (harpia_proj_final) StdoutLine: {'line': b'copying resource/harpia_proj_final -> /root/catkin_ws/install/harpia_proj_final/share/ament_index/resource_index/packages\n'}
+[1.164295] (harpia_proj_final) StdoutLine: {'line': b'copying package.xml -> /root/catkin_ws/install/harpia_proj_final/share/harpia_proj_final\n'}
+[1.164388] (harpia_proj_final) StdoutLine: {'line': b'creating /root/catkin_ws/install/harpia_proj_final/share/harpia_proj_final/launch\n'}
+[1.164770] (harpia_proj_final) StdoutLine: {'line': b'copying launch/proj_final.launch.py -> /root/catkin_ws/install/harpia_proj_final/share/harpia_proj_final/launch\n'}
+[1.164878] (harpia_proj_final) StdoutLine: {'line': b'creating /root/catkin_ws/install/harpia_proj_final/share/harpia_proj_final/params\n'}
+[1.165037] (harpia_proj_final) StdoutLine: {'line': b'copying params/bridges.yaml -> /root/catkin_ws/install/harpia_proj_final/share/harpia_proj_final/params\n'}
+[1.165145] (harpia_proj_final) StdoutLine: {'line': b'creating /root/catkin_ws/install/harpia_proj_final/share/harpia_proj_final/worlds\n'}
+[1.165292] (harpia_proj_final) StdoutLine: {'line': b'copying worlds/proj_final_world.sdf -> /root/catkin_ws/install/harpia_proj_final/share/harpia_proj_final/worlds\n'}
+[1.165402] (harpia_proj_final) StdoutLine: {'line': b'running install_egg_info\n'}
+[1.167083] (harpia_proj_final) StdoutLine: {'line': b'Copying ../../build/harpia_proj_final/harpia_proj_final.egg-info to /root/catkin_ws/install/harpia_proj_final/lib/python3.10/site-packages/harpia_proj_final-0.0.0-py3.10.egg-info\n'}
+[1.169869] (harpia_proj_final) StdoutLine: {'line': b'running install_scripts\n'}
+[1.192763] (harpia_proj_final) StdoutLine: {'line': b"writing list of installed files to '/root/catkin_ws/build/harpia_proj_final/install.log'\n"}
+[1.204323] (-) TimerEvent: {}
+[1.220031] (harpia_proj_final) CommandEnded: {'returncode': 0}
+[1.255651] (harpia_proj_final) JobEnded: {'identifier': 'harpia_proj_final', 'rc': 0}
+[1.257395] (-) EventReactorShutdown: {}

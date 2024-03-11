@@ -1,0 +1,40 @@
+running egg_info
+creating ../../build/harpia_proj_final/harpia_proj_final.egg-info
+writing ../../build/harpia_proj_final/harpia_proj_final.egg-info/PKG-INFO
+writing dependency_links to ../../build/harpia_proj_final/harpia_proj_final.egg-info/dependency_links.txt
+writing entry points to ../../build/harpia_proj_final/harpia_proj_final.egg-info/entry_points.txt
+writing requirements to ../../build/harpia_proj_final/harpia_proj_final.egg-info/requires.txt
+writing top-level names to ../../build/harpia_proj_final/harpia_proj_final.egg-info/top_level.txt
+writing manifest file '../../build/harpia_proj_final/harpia_proj_final.egg-info/SOURCES.txt'
+reading manifest file '../../build/harpia_proj_final/harpia_proj_final.egg-info/SOURCES.txt'
+adding license file 'LICENSE'
+writing manifest file '../../build/harpia_proj_final/harpia_proj_final.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /root/catkin_ws/build/harpia_proj_final/build
+creating /root/catkin_ws/build/harpia_proj_final/build/lib
+creating /root/catkin_ws/build/harpia_proj_final/build/lib/harpia_proj_final
+copying harpia_proj_final/__init__.py -> /root/catkin_ws/build/harpia_proj_final/build/lib/harpia_proj_final
+running install
+/usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+  warnings.warn(
+running install_lib
+creating /root/catkin_ws/install/harpia_proj_final/lib/python3.10/site-packages/harpia_proj_final
+copying /root/catkin_ws/build/harpia_proj_final/build/lib/harpia_proj_final/__init__.py -> /root/catkin_ws/install/harpia_proj_final/lib/python3.10/site-packages/harpia_proj_final
+byte-compiling /root/catkin_ws/install/harpia_proj_final/lib/python3.10/site-packages/harpia_proj_final/__init__.py to __init__.cpython-310.pyc
+running install_data
+creating /root/catkin_ws/install/harpia_proj_final/share/ament_index
+creating /root/catkin_ws/install/harpia_proj_final/share/ament_index/resource_index
+creating /root/catkin_ws/install/harpia_proj_final/share/ament_index/resource_index/packages
+copying resource/harpia_proj_final -> /root/catkin_ws/install/harpia_proj_final/share/ament_index/resource_index/packages
+copying package.xml -> /root/catkin_ws/install/harpia_proj_final/share/harpia_proj_final
+creating /root/catkin_ws/install/harpia_proj_final/share/harpia_proj_final/launch
+copying launch/proj_final.launch.py -> /root/catkin_ws/install/harpia_proj_final/share/harpia_proj_final/launch
+creating /root/catkin_ws/install/harpia_proj_final/share/harpia_proj_final/params
+copying params/bridges.yaml -> /root/catkin_ws/install/harpia_proj_final/share/harpia_proj_final/params
+creating /root/catkin_ws/install/harpia_proj_final/share/harpia_proj_final/worlds
+copying worlds/proj_final_world.sdf -> /root/catkin_ws/install/harpia_proj_final/share/harpia_proj_final/worlds
+running install_egg_info
+Copying ../../build/harpia_proj_final/harpia_proj_final.egg-info to /root/catkin_ws/install/harpia_proj_final/lib/python3.10/site-packages/harpia_proj_final-0.0.0-py3.10.egg-info
+running install_scripts
+writing list of installed files to '/root/catkin_ws/build/harpia_proj_final/install.log'
