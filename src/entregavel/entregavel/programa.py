@@ -51,17 +51,21 @@ class Assinante(Node):
         carro = self._dados["carro"] # Pego a posição do carro
 
         for alvo in self._dados:
-            for coordenada in ["x","y","z"]: #Atualiza a velocidade do carro em cada eixo
-                if getattr(self._dados[alvo], coordenada) > getattr(carro["posição"], coordenada):
-                    setattr(carro["linear"], coordenada, 1)
-                if getattr(self._dados[alvo], coordenada) < getattr(carro["posição"], coordenada):
-                    setattr(carro["linear"], coordenada, -1)
-                if getattr(self._dados[alvo], coordenada) == getattr(carro["posição"], coordenada):
-                    setattr(carro["linear"], coordenada, 0)
-            
-            if alvo != "carro": #verifica se a posição do carro é a mesma que a do alvo, se for, elimina o alvo pra no próximo loop começar pelo próximo
+            if alvo != "carro": #elimina o alvo se ele já tiver sido alcançado pelo carro
                 if carro["posição"] == self._dados[alvo]: 
                     del self._dados[alvo]
+                    continue # pula pro próximo alvo
+
+                for coordenada in ["x","y","z"]: #Atualiza a velocidade do carro em cada eixo
+                    if getattr(self._dados[alvo], coordenada) > getattr(carro["posição"], coordenada):
+                        setattr(carro["linear"], coordenada, 1)
+                    if getattr(self._dados[alvo], coordenada) < getattr(carro["posição"], coordenada):
+                        setattr(carro["linear"], coordenada, -1)
+                    if getattr(self._dados[alvo], coordenada) == getattr(carro["posição"], coordenada):
+                        setattr(carro["linear"], coordenada, 0)
+            else: #caso o alvo seja o próprio carro ele passa pro p´roximo alvo
+                continue
+            break #encerra o loop depois de ter atualizado a velocidade                
 
         # Atualizando o tópico da velocidade do carro
         vel = Twist()
