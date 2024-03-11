@@ -9,6 +9,7 @@ class Assinante(Node):
         super().__init__('Assinante')
         self.get_logger().info('Escutando topico')
 
+        self._dados = {}
         self._carrinho = self.create_subscription(Odometry, "/carrinho/odometry", self.carrinho, 10)
         self._alvo1 = self.create_subscription(Odometry, "/alvo1/odometry", self.alvo1, 10)
         self._alvo2 = self.create_subscription(Odometry, "/alvo2/odometry", self.alvo2, 10)
@@ -22,35 +23,56 @@ class Assinante(Node):
     def carrinho(self, objeto):
         vel_linear = objeto.twist.linear
         vel_angular = objeto.twist.angular
-        position = objeto.pose
+        position = objeto.pose.position
+
+        self._dados["carro"] = {"posição" : position, "linear" : vel_linear, "angular" : vel_angular}
 
     def alvo1(self, objeto):
-        vel_linear = objeto.twist.linear
-        vel_angular = objeto.twist.angular
-        position = objeto.pose
+        position = objeto.pose.position
+        self._dados["Alvo1"] = position
 
     def alvo2(self, objeto):
-        vel_linear = objeto.twist.linear
-        vel_angular = objeto.twist.angular
-        position = objeto.pose
+        position = objeto.pose.position
+        self._dados["Alvo2"] = position
     
     def alvo3(self, objeto):
-        vel_linear = objeto.twist.linear
-        vel_angular = objeto.twist.angular
-        position = objeto.pose
+        position = objeto.pose.position
+        self._dados["Alvo3"] = position
     
     def alvo4(self, objeto):
-        vel_linear = objeto.twist.linear
-        vel_angular = objeto.twist.angular
-        position = objeto.pose
+        position = objeto.pose.position
+        self._dados["Alvo4"] = position
     
     def alvo5(self, objeto):
-        vel_linear = objeto.twist.linear
-        vel_angular = objeto.twist.angular
-        position = objeto.pose
+        position = objeto.pose.position
+        self._dados["Alvo5"] = position
 
     def atualizar_velocidade(self):
-        pass #Criar uma lógica pra atualizar a velocidade do carrinho
+        carro = self._dados["carro"] # Pego a posição do carro
+
+        for alvo in self._dados:
+            for coordenada in ["x","y","z"]:
+                if getattr(self._dados[alvo], coordenada) > getattr(carro["posição"], coordenada):
+                    setattr(carro["linear"], coordenada, 1)
+                if getattr(self._dados[alvo], coordenada) < getattr(carro["posição"], coordenada):
+                    setattr(carro["linear"], coordenada, -1)
+                if getattr(self._dados[alvo], coordenada) == getattr(carro["posição"], coordenada):
+                    setattr(carro["linear"], coordenada, 0)
+            
+            if alvo != "carro":
+                if carro["posição"] == self._dados[alvo]: #verifica se a posição do carro é a mesma que a do alvo
+                    del self._dados[alvo]
+
+        vel = Twist()
+        vel.linear.x = carro["linear"].x
+        vel.linear.y = carro["linear"].y
+        vel.linear.z = carro["linear"].z
+
+        vel.angular.x = carro["angular"].x
+        vel.angular.y = carro["angular"].y
+        vel.angular.z = carro["angular"].z
+
+        self._publicador.publish(vel)
 
 
 def main(args=None):
